@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Importação do Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--folha de estilo-->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Modulador de Cores RGB - IGTI</title>
+</head>
+
+<body>
+  <div class="container">
+<!--Título do app-->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="fundoBranco"><h1>Modulador de RGB</h1>
+        <p>"Esta atividade tem como propósito criar um modulador</br>
+        que receba valores do slider e seja capaz de retornar uma cor."</p></div>
+      </div>
+    </div>
+  <!--Aqui é a coluna das cores-->
+    <div class="row">
+      <div class="col-md-6" "colors" id="colors">
+  
+      <div class="shape1" "col-md-5" "red">
+      <h2>Vermelho</h2>
+        <input type="range" min="0" max="255" value="0" class="red" id="red">      
+                <span id="rangeValue1" class="rangeValue1">0</span>
+      </div>
+  
+      <div class="shape2" "col-md-5" "green">
+      <h2>Verde</h2>
+      <input type="range" min="0" max="255" value="0" class="green" id="green">      
+              <span id="rangeValue2" class="rangeValue2">0</span>
+      </div>
+  
+      <div class="shape3" "col-md-5""blue">
+      <h2>Azul</h2>
+      <input type="range" min="0" max="255" value="0" class="blue" id="blue">      
+              <span id="rangeValue3" class="rangeValue3">0</span>
+      </div>
+  
+      </div>
+  <!--Aqui você tem os resultados aparecendo-->
+      <div class="col-md-6">
+      <section>
+      <div class="col-lg-5" "box">
+            <div class="box_color" id="box_color"></div>
+          </div>
+      </section>
+      </div>
+    </div>
+  
+  </div>
+  
+  
+</body>
+<script src="js/script.JS"></script>
+</html>
